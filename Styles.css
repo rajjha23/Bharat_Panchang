@@ -1,0 +1,115 @@
+/* --- Reset Default Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Body Styling --- */
+body {
+    background-color: #fff3cd;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- Header Styling --- */
+header {
+    background-color: #ff8c00;
+    padding: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+}
+
+/* --- Navigation Bar --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    background: #c0392b;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #c0392b;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* --- Section Styling --- */
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ff8c00;
+    color: white;
+}
+
+/* --- Mobile Responsive Design --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
